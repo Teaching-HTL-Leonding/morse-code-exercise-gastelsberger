@@ -1,0 +1,11 @@
+<div>
+  <h3>Enter a string</h3>
+
+  <form [formGroup]="form" (ngSubmit)="getValue()">
+    <label for="str"></label>
+    <input id="str" type="text" formControlName="str">
+    <button type="submit" class="primary">Submit</button>
+  </form>
+
+  <p id="message"></p>
+</div>
